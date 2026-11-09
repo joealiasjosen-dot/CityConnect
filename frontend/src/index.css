@@ -1,0 +1,150 @@
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
+:root {
+  font-family: 'DM Sans', sans-serif;
+  color: #FFFFFF;
+  background: #050505;
+
+  --black: #050505;
+  --yellow: #EFFF00;
+  --white: #FFFFFF;
+  --blue: #071D3B;
+  --blue-light: #102B50;
+  --text-muted: #A1A1AA;
+  --border: rgba(255, 255, 255, 0.12);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  background: var(--black);
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+::selection {
+  background: var(--yellow);
+  color: var(--black);
+}
+
+:focus-visible {
+  outline: 2px solid var(--yellow);
+  outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* CityConnect Custom Scrollbar */
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: #071D3B;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #EFFF00;
+  border-radius: 10px;
+  border: 4px solid #071D3B;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #F5FF4D;
+}
+
+/* Firefox Support */
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #EFFF00 #071D3B;
+}
+
+::-webkit-scrollbar {
+  width: 9px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #EFFF00;
+  border-radius: 10px;
+  border: 6px solid #071D3B;
+}
+
+.brand-city {
+  color: #FFFFFF !important;
+}
+
+.brand-connect {
+  color: #EFFF00 !important;
+}
+
+/* CityConnect Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #050505;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #071D3B;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #efff00;
+}
+
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #efff00 #050505;
+}
